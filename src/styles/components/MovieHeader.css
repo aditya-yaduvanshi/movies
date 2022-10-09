@@ -1,0 +1,39 @@
+.movie_header {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--color-light-gray);
+  position: relative;
+}
+.header_img {
+  width: 100%;
+  background-image: linear-gradient(transparent, black 95%);
+}
+.header_content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.6s;
+  background-image: linear-gradient(transparent, black 95%);
+  font-size: 110%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5%;
+}
+@media (min-width: 720px){
+  .movie_header {
+    max-height: calc(100vh - 60px);
+  }
+}
+.header_title {
+  color: white;
+}
+.header_title, .header_tagline {
+  width: 100%;
+  margin: 0;
+}
+.header_tagline {
+  color: var(--color-disabled);
+}
